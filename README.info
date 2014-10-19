@@ -1,5 +1,10 @@
-2014-10-19: You can mvn package, but anyway for testing run
-    com.vedroid.blog.Main
+2014-10-19: jacoco plugin is added: use mvn package, after finish
+    navigate to target\site\jacoco\index.html to see report for
+    line coverage of the tests.
 
 2014-10-19: You can mvn package, and see the results of tests:
     com.vedroid.blog.service.EntryServiceTest
+
+2014-10-19: You can mvn package, but anyway for testing run
+    com.vedroid.blog.Main
+
