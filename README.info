@@ -1,2 +1,5 @@
 2014-10-19: You can mvn package, but anyway for testing run
     com.vedroid.blog.Main
+
+2014-10-19: You can mvn package, and see the results of tests:
+    com.vedroid.blog.service.EntryServiceTest
