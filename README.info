@@ -1,0 +1,2 @@
+2014-10-19: You can mvn package, but anyway for testing run
+    com.vedroid.blog.Main
