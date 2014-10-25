@@ -1,6 +1,8 @@
 package com.vedroid.blog.service;
 
 import com.vedroid.blog.domain.Entry;
+import com.vedroid.blog.exception.BlogException;
+import com.vedroid.blog.exception.EntryNotFoundException;
 import com.vedroid.blog.util.InMemoryDBTest;
 import org.junit.Assert;
 import org.junit.Test;
@@ -28,6 +30,11 @@ public class EntryServiceTest extends InMemoryDBTest {
         List<Entry> entries = entryService.findAll();
         Assert.assertNotNull(entries);
         Assert.assertEquals(0, entries.size());
+    }
+
+    @Test(expected = EntryNotFoundException.class)
+    public void findNonExistingId() throws BlogException {
+        entryService.findEntry(999999999999999L);
     }
 
 }

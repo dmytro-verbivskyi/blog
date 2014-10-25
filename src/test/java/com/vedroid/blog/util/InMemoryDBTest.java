@@ -2,6 +2,7 @@ package com.vedroid.blog.util;
 
 import com.vedroid.blog.repository.EntryRepository;
 import com.vedroid.blog.service.EntryService;
+import com.vedroid.blog.utils.MessageHelper;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.runner.RunWith;
@@ -16,13 +17,17 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 public abstract class InMemoryDBTest {
 
     @Autowired
+    protected MessageHelper msg;
+
+    @Autowired
     protected EntryRepository entryRepository;
 
     @Autowired
     protected EntryService entryService;
 
     @Before
-    public void setUp() throws Exception {}
+    public void setUp() throws Exception {
+    }
 
     @After
     public void tearDown() throws Exception {

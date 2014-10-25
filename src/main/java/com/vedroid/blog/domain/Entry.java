@@ -5,6 +5,7 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
+import javax.validation.constraints.NotNull;
 
 @Entity
 @Table(name = "ENTRIES")
@@ -13,6 +14,7 @@ public class Entry extends Identifiable {
 
     @Basic
     @Column(name = "NAME", nullable = false)
+    @NotNull()
     private String name;
 
     public String getName() {

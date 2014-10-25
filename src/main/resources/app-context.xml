@@ -13,6 +13,12 @@
 
     <context:property-placeholder location="classpath:application.properties" />
 
+    <bean id="messageSource" class="org.springframework.context.support.ResourceBundleMessageSource">
+        <property name="basename">
+            <value>locale\messages\messages</value>
+        </property>
+    </bean>
+
     <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
         <property name="driverClassName" value="${database.driver}"/>
         <property name="url" value="${database.url}"/>
