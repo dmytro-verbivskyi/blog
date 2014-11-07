@@ -7,7 +7,7 @@ import java.util.List;
 
 public interface EntryService {
 
-    public List<Entry> findAll();
+    List<Entry> findAll();
 
     Entry create(Entry input);
 
