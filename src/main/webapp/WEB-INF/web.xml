@@ -5,7 +5,7 @@
 <web-app>
     <context-param>
         <param-name>contextConfigLocation</param-name>
-        <param-value>classpath:app-context.xml</param-value>
+        <param-value>classpath:app-context.xml, /WEB-INF/cxf.xml</param-value>
     </context-param>
 
     <listener>

@@ -20,6 +20,7 @@
         <mockito.version>1.9.5</mockito.version>
         <hsqldb.version>2.3.1</hsqldb.version>
         <cxf.version>3.0.2</cxf.version>
+        <httpclient.version>3.1</httpclient.version>
 
         <!-- Development -->
         <hibernate.dialect>org.hibernate.dialect.HSQLDialect</hibernate.dialect>
@@ -111,6 +112,11 @@
             <groupId>javax.ws.rs</groupId>
             <artifactId>javax.ws.rs-api</artifactId>
             <version>2.0.1</version>
+        </dependency>
+        <dependency>
+            <groupId>commons-httpclient</groupId>
+            <artifactId>commons-httpclient</artifactId>
+            <version>${httpclient.version}</version>
         </dependency>
         <dependency>
             <groupId>org.hibernate</groupId>

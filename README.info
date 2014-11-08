@@ -8,3 +8,13 @@
 2014-10-19: You can mvn package, but anyway for testing run
     com.vedroid.blog.Main
 
+
+TODO:
+[done]          use CXF for JAX-RS
+[in progress]   return XML and JSON with array of entry objects.
+[planned ]      aspect way for handling exceptions in controller layer.
+[planned ]      generate wadl
+[planned ]      embedded jetty controller test
+[planned ]      combine SOAP and REST
+[planned ]      generate wsdl
+[planned ]
